@@ -552,7 +552,7 @@ class Application
     }
 
     /**
-     * Set CLI process title (PHP versions >= 5.5)
+     * Set CLI process title
      */
     protected function setProcessTitle()
     {
