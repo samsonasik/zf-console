@@ -556,10 +556,6 @@ class Application
      */
     protected function setProcessTitle()
     {
-        if (version_compare(PHP_VERSION, '5.5', 'lt')) {
-            return;
-        }
-
         // Mac OS X does not support cli_set_process_title() due to security issues
         // Bug fix for issue https://github.com/zfcampus/zf-console/issues/21
         if (PHP_OS == 'Darwin') {
